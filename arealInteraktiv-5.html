@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        //Beder om brugeren om at angive værdier af længde og bredde.
+        let length = prompt("Hvad er længden?");
+        let width = prompt("Hvad er bredden?");
+
+        //hvis både længde og bredde er angives, udregnes arealets total.
+        if (length != null && length != "", width != null && width != "") {
+            alert("Arealet er " + length * width);
+        }
+        //hvis kun bredde angives som variabel, kan ikke regnes ud
+        else if (length != null && length != "") {
+            alert("Kan ikke regne det ud " + length);
+        }
+        //hvis kun bredde angives som variabel, kan ikke regnes ud
+        else if (width != null && width != "") {
+            alert("Kan ikke regne det ud " + width);
+        }
+
+        //Hvis ikke de korrekte variabler angives, start forfra.
+        else {
+            forfra = confirm("Vil du starte forfra?");
+            if (forfra) {
+                location.reload();
+            };
+        }
+
+    </script>
+</body>
+
+</html>
