@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        //Beder om brugeren om navne/værdier.
+        let fornavn = prompt("Hvad er dit fornavn?");
+        let efternavn = prompt("Hvad er dit efternavn?");
+
+        //hvis for og efternavnet er opgivet, sig godag til det fulde navn
+        if (fornavn != null && fornavn != "", efternavn != null && efternavn != "") {
+            alert("hej " + fornavn + efternavn);
+        }
+        //hvis kun fornavnet er opgivet sig hej til fornavn
+        else if (fornavn != null && fornavn != "") {
+            alert("hej " + fornavn);
+        }
+        //hvis kun efternavnet er opgivet sig hej til efternavn
+        else if (efternavn != null && efternavn != "") {
+            alert("hej " + efternavn);
+        }
+
+        //Hvis navnet IKKE er opgivet, sig " goddag min ven "
+        else {
+            alert("Goddag min ven");
+        }
+    </script>
+</body>
+
+</html>
