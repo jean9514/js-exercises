@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Array loop</title>
+
+    <!--
+   Opgave Array loop
+    Lav en div id = “display” og style den så den er synlig og stor nok til nogle linier tekst.
+
+
+Lav en array “playliste” med navne fra nogle af dine yndlings tracks i komma-separerede strings.
+Loop arrayet igennem og få hvert tracknavn til at stå i “display” , på hver deres linie med  en smiley. ;-)
+-->
+
+
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        #display {
+            width: 20vw;
+            height: 20vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            padding: 1vw;
+        }
+
+        /*********************/
+
+    </style>
+
+</head>
+
+<body>
+    <div id="display"></div>
+
+    <script>
+        const display = document.querySelector("#display");
+
+        let playlist = ["Dead by April", "Righteous vendetta", "Slaves", " Bullit for my valentine"];
+        // forEach loop gennem function for playlist. => betyder function.
+        playlist.forEach(sang => {
+            console.log(sang);
+            //hvad der vises på displayet + smiley og et html br.
+            display.innerHTML += sang + ":)" + "<br>";
+        });
+
+    </script>
+</body>
+
+</html>

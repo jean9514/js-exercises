@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>klik på knap</title>
+    <!--
+    Opgave Klik på knap
+    1 - En knap: “klik” + en div id: “box”
+Når man klikker på knappen “klik”, skal “box” vise teksten: “KLIK”. 
+2 - En knap mere: “slet”;
+Når man klikker på knappen “slet”, skal “box” resettes (viskes ren) = vise teksten: “ ”.
+3 - Prøv så at lave en knap “html”, der skriver en <h2> og en <p> indeni boksen.
+Se oversigten over DOM-manipulationer i næste slide. 
+4 - Lav så en knap “flyt”, der kan flytte den html over i en ny boks “bax” ! (gem innerHTML af “box” i en variabel, og skriv den til “bax”)
+Hvis du hidtil har brugt navngivne funktioner, så prøv med anonyme.. 
+-->
+
 
     <style>
         #box,
@@ -20,11 +32,14 @@
             font-size: 2rem;
             margin: 10px;
         }
+
     </style>
 
 </head>
 
 <body>
+
+    <!--    opgaverne er løst forkert, functioner skal erstattes af document.querySelector.....-->
 
     <button id="klik">klik</button>
 
@@ -92,6 +107,7 @@
             bax.textContent = "<h2>så er der fandme HTML kode</h2> <p>puha</p>";
 
         }
+
     </script>
 </body>
 
