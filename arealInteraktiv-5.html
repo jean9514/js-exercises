@@ -10,6 +10,8 @@
 
 <body>
     <script>
+        // Opgave 5:
+
         //Lav en ny udgave af areal-programmet.
         //Programmet skal bede brugeren angive en længde og en bredde
         //Programmet skal udregne arealet, og give brugeren resultatet efter formen:
@@ -22,12 +24,13 @@
 
 
         //Beder om brugeren om at angive værdier af længde og bredde.
-        let length = prompt("Hvad er længden?");
-        let width = prompt("Hvad er bredden?");
+        let length = prompt("Hvad er længden?"),
+            width = prompt("Hvad er bredden?"),
+            besked;
 
         //hvis både længde og bredde er angives, udregnes arealets total.
-        if (length != null && length != "", width != null && width != "") {
-            alert("Arealet er " + length * width);
+        if (Number(length) && Number(width)) {
+            alert("længden er: " + length + "meter\nBredde: " + width + "meter\nAreal" + length * width + " kvadratmeter");
         }
         //hvis kun bredde angives som variabel, kan ikke regnes ud
         else if (length != null && length != "") {
