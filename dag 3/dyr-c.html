@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dyr C</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div class="om">
+        <strong class="navn"></strong>
+        <span>: et </span>
+        <span class="type"></span>
+        <span>, som lever i </span>
+        <span class="levested"></span>
+
+    </div>
+    <script>
+        // her er OBJECT dovendyr, det har propertys i lilla og orange.
+        let dyr = {
+            "navn": "Dovendyr",
+            "type": "pattedyr",
+            "levested": "sydamerikanske regnskov"
+        };
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            document.querySelector(".om .navn").textContent = dyr.navn;
+            document.querySelector(".om .type").textContent = dyr.type;
+            document.querySelector(".om .levested").textContent = dyr.levested;
+
+        }
+    </script>
+</body>
+
+</html>
